@@ -10,4 +10,4 @@ class HelloWorld(Resource):
         return {'hello': 'world'}  # This should now return the JSON response without the error
 
 if __name__ == '__main__':
-    app.run(port=5001, debug=True)  # Assuming you intend to run on port 5001 in debug mode
+    app.run(host='0.0.0.0', port=5001, debug=True)
